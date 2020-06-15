@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="size_refresh_btn">40dp</dimen>
+    <dimen name="textsize_head">18sp</dimen>
+    <dimen name="size_country_icon_width">40dp</dimen>
+    <dimen name="size_country_icon_height">25dp</dimen>
+
+</resources>

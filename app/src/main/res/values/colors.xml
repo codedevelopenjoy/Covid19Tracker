@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="red">#DA0A0A</color>
+    <color name="blue">#0A1BDD</color>
+    <color name="green">#56B821</color>
+    <color name="grey">#7A7A7A</color>
+    <color name="black">#000000</color>
+
+    <color name="background">#f7bc92</color>
+    <color name="textcolor_main_country">#000</color>
+    <color name="color_table_heads">#000</color>
+    <color name="color_confirmed_cases">#c30101</color>
+    <color name="color_active_cases">#020cc7</color>
+    <color name="color_recovered_cases">#048a04</color>
+    <color name="color_deaths_cases">#525252</color>
+    <color name="white">#ffffff</color>
+    <color name="light_green">#20F4B8</color>
+
+</resources>

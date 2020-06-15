@@ -1,0 +1,80 @@
+<!--ACTUAL CONTENTS PLACE-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    android:id="@+id/mainLayout">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/background_border"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="N.A"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+    
+    <TextView
+        android:id="@+id/confirmed"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/background_border"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="N.A"
+        android:textColor="@color/color_confirmed_cases"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/active"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/background_border"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="N.A"
+        android:textColor="@color/color_active_cases"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/recovered"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/background_border"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="N.A"
+        android:textColor="@color/color_recovered_cases"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/deaths"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/background_border"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="N.A"
+        android:textColor="@color/color_deaths_cases"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+</LinearLayout>

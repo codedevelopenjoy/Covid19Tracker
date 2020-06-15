@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/white"
+	android:id="@+id/mainLayout"
+    android:layout_marginBottom="3dp">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:background="@drawable/background_border"
+		android:padding="@dimen/widget_margin">
+
+		<!--HEADING LAYOUT WITH COUNTRY NAME AND REFRESH BUTTON-->
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="5dp">
+
+			<TextView
+				android:id="@+id/countrytext"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:text="@string/app_name"
+				android:textColor="@color/textcolor_main_country"
+				android:textSize="@dimen/textsize_head"
+				android:typeface="monospace"
+				tools:ignore="RelativeOverlap" />
+
+			<TextView
+				android:layout_marginTop="2dp"
+				android:layout_below="@+id/countrytext"
+				android:id="@+id/lastUpdatedText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:text="@string/app_name"
+				android:textColor="@color/textcolor_main_country"
+				android:textSize="12sp"
+				android:typeface="monospace"
+				tools:ignore="RelativeOverlap" />
+
+
+			<ImageView
+                android:layout_width="46dp"
+				android:layout_height="46dp"
+				android:layout_alignParentEnd="true"
+				android:layout_alignParentRight="true"
+				android:src="@drawable/refresh"
+				android:id="@+id/refreshBtn"
+				android:contentDescription="@string/app_name"/>
+
+		</RelativeLayout>
+
+		<!--TABLE HEADINGS-->
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:weightSum="5"
+			android:id="@+id/clickedLayout">
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:background="@drawable/background_border"
+				android:gravity="center"
+				android:padding="3dp"
+				android:text="Period"
+				android:textColor="@color/color_table_heads"
+				android:textSize="12sp"
+				android:typeface="monospace" />
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:background="@drawable/background_border"
+				android:gravity="center"
+				android:padding="3dp"
+				android:text="Confirmed"
+				android:textColor="@color/color_table_heads"
+				android:textSize="12sp"
+				android:typeface="monospace" />
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:background="@drawable/background_border"
+				android:gravity="center"
+				android:padding="3dp"
+				android:text="Active"
+				android:textColor="@color/color_table_heads"
+				android:textSize="12sp"
+				android:typeface="monospace" />
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:background="@drawable/background_border"
+				android:gravity="center"
+				android:padding="3dp"
+				android:text="Recovered"
+				android:textColor="@color/color_table_heads"
+				android:textSize="12sp"
+				android:typeface="monospace" />
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:background="@drawable/background_border"
+				android:gravity="center"
+				android:padding="3dp"
+				android:text="Deaths"
+				android:textColor="@color/color_table_heads"
+				android:textSize="12sp"
+				android:typeface="monospace" />
+
+		</LinearLayout>
+
+		<!--ROWS-->
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:id="@+id/table">
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

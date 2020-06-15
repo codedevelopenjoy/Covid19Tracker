@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Covid19 Tracker</string>
+    <string name="https_api_covid19india_org"><u>https://api.covid19india.org</u></string>
+    <string name="https_corona_lmao_ninja_v2_countries"><u>https://corona.lmao.ninja/v2/countries</u></string>
+</resources>
