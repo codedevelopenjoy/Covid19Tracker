@@ -117,7 +117,7 @@ public class CountriesActivity extends AppCompatActivity
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_countries_districts, menu);
+        getMenuInflater().inflate(R.menu.menu_countries_districts_timeseries, menu);
         final SearchView searchView = (SearchView) MenuItemCompat.getActionView(menu.findItem(R.id.search));
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 

@@ -4,12 +4,12 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.covid19.tracker.R;
 import com.covid19.tracker.adapter.RecyclerAdapterStates;
 import com.covid19.tracker.entitty.ItemData;
@@ -18,8 +18,10 @@ import com.covid19.tracker.interfaces.OnFetchedListener;
 import com.covid19.tracker.utils.MiscDialogs;
 import com.covid19.tracker.utils.SharedPrefsHelper;
 import com.covid19.tracker.utils.Sorter;
+
 import java.util.ArrayList;
 import java.util.Collections;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
@@ -32,6 +34,8 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 public class StatesActivity extends AppCompatActivity
         implements OnFetchedListener<ItemData>, View.OnClickListener, SwipeRefreshLayout.OnRefreshListener {
+
+    public static final String STATES_LIST_IDENTIFIER = "list";
 
     private RecyclerView recyclerView;
     private RecyclerAdapterStates recyclerAdapterStates;
@@ -181,8 +185,16 @@ public class StatesActivity extends AppCompatActivity
             MiscDialogs.showSources(this);
         } else if (item.getItemId() == R.id.developers) {
             MiscDialogs.showDevelopers(this);
+        } else if (item.getItemId() == R.id.timeseries) {
+            startTimeSeriesData();
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void startTimeSeriesData() {
+        Intent intent = new Intent(this, TimeSeriesActivity.class);
+        intent.putExtra(STATES_LIST_IDENTIFIER, items);
+        startActivity(intent);
     }
 
     @Override

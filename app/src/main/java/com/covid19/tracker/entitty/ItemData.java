@@ -1,14 +1,16 @@
 
 package com.covid19.tracker.entitty;
 
-public class ItemData {
+import java.io.Serializable;
+
+public class ItemData implements Serializable{
 
     public ItemData delta = null;
     public ItemData yesterday = null;   //ONLY IN TOTAL CASES
-    public String active = "";
-    public String confirmed = "";
-    public String deaths = "";
-    public String recovered = "";
+    public String active = "0";
+    public String confirmed = "0";
+    public String deaths = "0";
+    public String recovered = "0";
     public String state = "";
     public String statecode = "";
     public String lastUpdated = "";

@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
-
     <item
         android:title="Search"
         app:actionViewClass="androidx.appcompat.widget.SearchView"
@@ -11,29 +9,13 @@
         android:id="@+id/search" />
 
     <item
-        android:title="TimeSeries"
-        android:id="@+id/timeseries"
-        app:showAsAction="never" />
-
-    <item
-        android:title="World Data"
-        android:id="@+id/worlddata"
-        app:showAsAction="never" />
-
-    <item
-        android:title="Widget Settings"
-        android:id="@+id/widgetstate"
-        app:showAsAction="never" />
-
-    <item
         android:title="Sources"
         android:id="@+id/sources"
-        app:showAsAction="never" />
+        app:showAsAction="never"/>
 
     <item
         android:title="Developers"
         android:id="@+id/developers"
-        app:showAsAction="never" />
-
+        app:showAsAction="never"/>
 
 </menu>

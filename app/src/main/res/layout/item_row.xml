@@ -1,6 +1,5 @@
 <!--ACTUAL CONTENTS PLACE-->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
@@ -8,6 +7,7 @@
     android:id="@+id/mainLayout">
 
     <TextView
+        android:marqueeRepeatLimit="marquee_forever"
         android:id="@+id/time"
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -20,7 +20,7 @@
         android:textSize="12sp"
         android:textStyle="bold"
         android:typeface="monospace" />
-    
+
     <TextView
         android:id="@+id/confirmed"
         android:layout_width="0dp"
